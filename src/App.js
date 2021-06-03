@@ -12,11 +12,15 @@ import { Footer } from './components/footer';
 import { HashLink as Link } from 'react-router-hash-link';
 import { BrowserRouter as Router } from "react-router-dom";
 import SideDrawer from './components/Drawer';
+import { Helmet } from 'react-helmet'
 
 function App() {
   const classes = useStyles();
   return (
     <div className="App">
+      <Helmet>
+        <title>MugiranezaJ</title>
+      </Helmet>
       <AppBar position='sticky' className={classes.appBar}>
             <Toolbar style={{display:'flex', justifyContent:'space-between'}}>
               
