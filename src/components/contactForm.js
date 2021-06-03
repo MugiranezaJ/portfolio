@@ -29,12 +29,12 @@ export const ContactForm = () => {
   >
     {props => {
       const {
-        values,
+        // values,
         touched,
         errors,
         isSubmitting,
-        handleChange,
-        handleBlur,
+        // handleChange,
+        // handleBlur,
         handleSubmit
       } = props;
       return (
