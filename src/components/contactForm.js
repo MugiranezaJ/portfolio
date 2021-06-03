@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Field, Formik } from "formik";
 import { makeStyles } from '@material-ui/core/styles';
 import * as Yup from "yup";
@@ -6,28 +6,23 @@ import { Button, TextField } from "@material-ui/core";
 import emailjs from 'emailjs-com';
 export const ContactForm = () => {
     const classes = useStyles();
-
-    function sendEmail(e) {
-      // e.preventDefault();
-  
-      emailjs.sendForm('service_q29gkb8', 'template_z0lvimw', e, 'user_CcwoPuwA0EUIOWdFSPZPC')
-        .then((result) => {
-            console.log(result.text);
-        }, (error) => {
-            console.log(error.text);
-      });
-      // e.target.reset()   
-    }
+    const [response, setResponse] = useState();
+    const [error, setError] = useState();
     return (
   <Formik
     initialValues={{ name:"", email: "", subject:"", message: "" }}
-    // onSubmit={sendEmail}
-    onSubmit={(values, { setSubmitting }) => {
-      setTimeout(() => {
-        sendEmail(values)
+    onSubmit={(values, { resetForm,setSubmitting }) => {
         console.log("Logging in", values);
+        emailjs.send('service_q29gkb8', 'template_z0lvimw', values, 'user_CcwoPuwA0EUIOWdFSPZPC')
+        .then((result) => {
+            console.log(result.text);
+            setResponse(result.text)
+            resetForm()
+        }, (error) => {
+            console.log(error.text);
+            setError(error.text)
+        });
         setSubmitting(false);
-      }, 500);
     }}
 
     validationSchema={Yup.object().shape({
@@ -89,7 +84,7 @@ export const ContactForm = () => {
                 helperText={touched.message && errors.message}
             />
           <Button type="submit" disabled={isSubmitting}>
-            Send
+            Send {response ? "Succedded" : error ? " Failed" : "" }
           </Button>
         </form>
       );
