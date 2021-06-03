@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Box, Typography } from '@material-ui/core';
-import { Android, Web } from '@material-ui/icons';
+import { Android, Wallpaper, Web } from '@material-ui/icons';
 
 export function Services(){
     const classes = useStyles();
@@ -19,12 +19,12 @@ export function Services(){
                 <Box boxShadow={10} className={classes.card}>
                     <div className={classes.icon}><Android style={{fontSize:'80px', color:'steelblue'}}/></div>
                     <Typography variant={'h4'} style={{fontWeight:'bold'}}>Android apps</Typography>
-                    <Typography>If you want an android and ios(app) then can deliver it for you with respect to your derired architecture.</Typography>
+                    <Typography>If you want an android and ios(app) then I can deliver it for you with respect to your derired architecture.</Typography>
                 </Box>
                 <Box boxShadow={10} className={classes.card}>
-                    <div className={classes.icon}><Android style={{fontSize:'80px', color:'steelblue'}}/></div>
-                    <Typography variant={'h4'} style={{fontWeight:'bold'}}>Web Design</Typography>
-                    <Typography>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $17 each.</Typography>
+                    <div className={classes.icon}><Wallpaper style={{fontSize:'80px', color:'steelblue'}}/></div>
+                    <Typography variant={'h4'} style={{fontWeight:'bold'}}>3D Art</Typography>
+                    <Typography>Convert your story into a real world thing. Hire me for 3d art for your assets either for animation or for 3d printing </Typography>
                 </Box>
             </div>
         </div>
