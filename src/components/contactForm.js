@@ -3,13 +3,28 @@ import { Field, Formik } from "formik";
 import { makeStyles } from '@material-ui/core/styles';
 import * as Yup from "yup";
 import { Button, TextField } from "@material-ui/core";
+import emailjs from 'emailjs-com';
 export const ContactForm = () => {
     const classes = useStyles();
+
+    function sendEmail(e) {
+      // e.preventDefault();
+  
+      emailjs.sendForm('service_q29gkb8', 'template_z0lvimw', e, 'user_CcwoPuwA0EUIOWdFSPZPC')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+      });
+      // e.target.reset()   
+    }
     return (
   <Formik
     initialValues={{ name:"", email: "", subject:"", message: "" }}
+    // onSubmit={sendEmail}
     onSubmit={(values, { setSubmitting }) => {
       setTimeout(() => {
+        sendEmail(values)
         console.log("Logging in", values);
         setSubmitting(false);
       }, 500);

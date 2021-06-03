@@ -5,7 +5,7 @@ import java from '../assets/java.png'
 import python from '../assets/python.png'
 import react from '../assets/logo192.png'
 import android from '../assets/android.png'
-import nodejs from '../assets/nodejs.webp'
+import php from '../assets/php.png'
 import solidworks from '../assets/solidworks.png'
 import unity from '../assets/unity.png'
 import photoshop from '../assets/photoshop.png'
@@ -18,9 +18,9 @@ export function About(){
             <div className={classes.aboutInner}>
                 <div className={classes.InnerBox}>
                     <div className={classes.description}>
-                        <Typography variant={'h4'} style={{fontSize:'36px', fontWeight:'bold', marginBottom:'10px'}}>ABOUT MYSELF</Typography> 
+                        <Typography variant={'h4'} style={{ marginBottom:'10px'}}>ABOUT MYSELF</Typography> 
                         <Typography>
-                        inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed.
+                         a full-stack engeer with more than 2 years of experience in real world projects including maintenance for already existing projects or fresh new projects on market. I am passionate about software engineering and project delivery time is main my priority
                         </Typography>
                     </div>
                     <div className={classes.skills}>
@@ -62,9 +62,9 @@ export function About(){
                         </div>
                         <div className={classes.skill}>
                             <div >
-                                <img src={nodejs} alt='JS' className={classes.skillLogo}/>
+                                <img src={php} alt='JS' className={classes.skillLogo}/>
                             </div>
-                            <Typography>Nodejs</Typography>
+                            <Typography>Php</Typography>
                         </div>
                         <div className={classes.skill}>
                             <div >
@@ -100,7 +100,17 @@ const useStyles = makeStyles({
         paddingTop:'66px',
         '@media(max-width: 900px)':{
             height:'auto',
-          }
+        },
+        '@media(max-width: 800px) and (min-width: 600px)':{
+            paddingTop:'100px',
+            margin:'unset !important'
+        },
+        '@media(max-width: 600px)':{
+            marginTop:'-40px'
+        },
+        '@media(max-width: 280px)':{
+            marginTop:'-100px'
+        },
     },
     aboutInner:{
         color:'black',

@@ -6,7 +6,7 @@ import './App.css';
 import logo from './assets/IMG_6521.JPG';
 import {About} from './components/About'
 import { Experience } from './components/Experience'
-import { CalendarTodayOutlined, Facebook, GitHub, HomeOutlined, LinkedIn, MailOutline, PhoneOutlined, Twitter } from '@material-ui/icons';
+import { Facebook, GitHub, HomeOutlined, LinkedIn, MailOutline, PhoneOutlined, Twitter } from '@material-ui/icons';
 import { Services } from './components/Services';
 import { Footer } from './components/footer';
 import { HashLink as Link } from 'react-router-hash-link';
@@ -24,7 +24,6 @@ function App() {
                 MugiranezaJ
               </Typography>
               <IconButton edge="end" color="inherit" aria-label="menu">
-                {/* <MenuOutlined /> */}
                 <Router>
                   <SideDrawer/>
                 </Router>
@@ -56,10 +55,7 @@ function App() {
               <p>HELLO EVELYONE, I AM</p>
               <Typography className={classes.name} variant={'h3'} paragraph>MUGIRANEZA JACKSON</Typography>
               <Typography variant={'h6'} paragraph>FULL-STACK DEVELOPER</Typography>
-              <Typography paragraph style={{display:'flex', }}>You will start to realize why this exercises is called the Dickens Pattern(with reference to rhe ghost showing Scrooge some different futures)</Typography>
-              <Typography paragraph style={{display:'flex', }}>
-                <CalendarTodayOutlined color={'primary'} style={{marginRight:'15px'}}/> 31st December, 1992
-              </Typography>
+              <Typography paragraph style={{display:'flex', }}>Client satisfaction and project delivery time is the main priority. Feel free to join me.</Typography>
               <Typography paragraph style={{display:'flex', }}>
                 <PhoneOutlined color={'primary'} style={{marginRight:'15px'}}/> (+250) 780712835
               </Typography>
@@ -91,13 +87,13 @@ const useStyles = makeStyles({
     background: 'whitesmoke',
     height:'900px',
     alignItems: 'flex-start',
-    '@media(max-width: 900px)':{
-    },
-    '@media screen and (max-width: 800px) and (min-width:720px)':{
+    '@media(max-width: 900px) and (min-width:720px)':{
       height:'1070px',
     },
-    '@media(max-width: 720px)':{
+    '@media screen and (max-width: 720px) and (min-width:601px)':{
+      height:'1000px',
     },
+    
   },
   homeInner:{
     background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
@@ -188,6 +184,7 @@ const useStyles = makeStyles({
   },
   cardLeft:{
     width:'60%',
+    fontWeight:'bold',
     borderRadius:'10px',
     '@media(max-width: 900px)':{
       width:'unset',
@@ -225,6 +222,7 @@ const useStyles = makeStyles({
   },
   appBar:{
     display:'none',
+    position:'sticky',
     backgroundColor:'#071e26',
     '@media(max-width:900px)':{
       display:'block',
