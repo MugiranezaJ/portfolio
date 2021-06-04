@@ -6,50 +6,6 @@ import { makeStyles } from "@material-ui/core/styles"
 import Divider from '@material-ui/core/Divider'
 import { HashLink as Link } from 'react-router-hash-link';
 
-const useStyles = makeStyles({
-  list: {
-    width: 250,
-    height:'100%',
-    backgroundColor:'#071e26'
-  },
-  linkText: {
-    textDecoration: `none`,
-    textTransform: `uppercase`,
-    color: 'black'
-  },
-  menuIcon: {
-    color: 'white'
-  },
-  container: {
-    width: 250,
-    position: 'absolute',
-    top: 64,
-    bottom: 0,
-    backgroundColor:'#EAF4FB',
-    overflow:'auto'
-},
-adminBox:{
-    display:'flex',
-    justifyContent:'space-evenly',
-    alignItems:'center',
-    height:70,
-    color:'#fff'
-},
-linkBox: {
-  display:'flex',
-  padding:'10px',
-  color:'#43A0D6',
-  '&:hover':{
-      background: '#ABD5ED',
-      borderLeft: '6px solid  #257AAA'
-    }
-},
-a:{
-    textDecoration:'none',
-    color:'#43A0D6',
-    
-},
-})
 
 const SideDrawer = ({navLinks}) => {
   const classes = useStyles()
@@ -126,5 +82,50 @@ const SideDrawer = ({navLinks}) => {
     </React.Fragment>
   )
 }
+
+const useStyles = makeStyles({
+  list: {
+    width: 250,
+    height:'100%',
+    backgroundColor:'#071e26'
+  },
+  linkText: {
+    textDecoration: `none`,
+    textTransform: `uppercase`,
+    color: 'black'
+  },
+  menuIcon: {
+    color: 'white'
+  },
+  container: {
+    width: 250,
+    position: 'absolute',
+    top: 64,
+    bottom: 0,
+    backgroundColor:'#EAF4FB',
+    overflow:'auto'
+},
+adminBox:{
+    display:'flex',
+    justifyContent:'space-evenly',
+    alignItems:'center',
+    height:70,
+    color:'#fff'
+},
+linkBox: {
+  display:'flex',
+  padding:'10px',
+  color:'#43A0D6',
+  '&:hover':{
+      background: '#ABD5ED',
+      borderLeft: '6px solid  #257AAA'
+    }
+},
+a:{
+    textDecoration:'none',
+    color:'#43A0D6',
+    
+},
+})
 
 export default SideDrawer
