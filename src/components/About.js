@@ -5,7 +5,7 @@ import java from '../assets/java.png'
 import python from '../assets/python.png'
 import react from '../assets/logo192.png'
 import android from '../assets/android.png'
-import php from '../assets/php.png'
+// import php from '../assets/php.png'
 import solidworks from '../assets/solidworks.png'
 import unity from '../assets/unity.png'
 import photoshop from '../assets/photoshop.png'
@@ -32,7 +32,7 @@ export function About(){
                         </div>
                         <div className={classes.skill}>
                             <div >
-                                <img src={python} alt='JS' className={classes.skillLogo}/>
+                                <img src={python} alt='Java' className={classes.skillLogo}/>
                             </div>
                             <Typography>Python</Typography>
                         </div>
@@ -44,43 +44,43 @@ export function About(){
                         </div>
                         <div className={classes.skill}>
                             <div >
-                                <img src={react} alt='JS' className={classes.skillLogo}/>
+                                <img src={react} alt='React' className={classes.skillLogo}/>
                             </div>
                             <Typography>React</Typography>
                         </div>
                         <div className={classes.skill}>
                             <div >
-                                <img src={react} alt='JS' className={classes.skillLogo}/>
+                                <img src={react} alt='React native' className={classes.skillLogo}/>
                             </div>
                             <Typography>React Native</Typography>
                         </div>
                         <div className={classes.skill}>
                             <div >
-                                <img src={android} alt='JS' className={classes.skillLogo}/>
+                                <img src={android} alt='Android' className={classes.skillLogo}/>
                             </div>
                             <Typography>Android</Typography>
                         </div>
-                        <div className={classes.skill}>
+                        {/* <div className={classes.skill}>
                             <div >
-                                <img src={php} alt='JS' className={classes.skillLogo}/>
+                                <img src={php} alt='Php' className={classes.skillLogo}/>
                             </div>
                             <Typography>Php</Typography>
-                        </div>
+                        </div> */}
                         <div className={classes.skill}>
                             <div >
-                                <img src={solidworks} alt='JS' className={classes.skillLogo}/>
+                                <img src={solidworks} alt='Solidworks' className={classes.skillLogo}/>
                             </div>
                             <Typography>SolidWorks</Typography>
                         </div>
                         <div className={classes.skill}>
                             <div >
-                                <img src={unity} alt='JS' className={classes.skillLogo}/>
+                                <img src={unity} alt='Unity' className={classes.skillLogo}/>
                             </div>
                             <Typography>Unity</Typography>
                         </div>
                         <div className={classes.skill}>
                             <div >
-                                <img src={photoshop} alt='JS' className={classes.skillLogo}/>
+                                <img src={photoshop} alt='Photoshop' className={classes.skillLogo}/>
                             </div>
                             <Typography>Photoshop</Typography>
                         </div>
