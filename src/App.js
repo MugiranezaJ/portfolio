@@ -18,9 +18,9 @@ function App() {
   const classes = useStyles();
   return (
     <div className="App">
-      <Helmet>
+      {/* <Helmet>
         <title>MugiranezaJ</title>
-      </Helmet>
+      </Helmet> */}
       <AppBar position='sticky' className={classes.appBar}>
             <Toolbar style={{display:'flex', justifyContent:'space-between'}}>
               
