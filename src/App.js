@@ -12,7 +12,7 @@ import { Footer } from './components/footer';
 import { HashLink as Link } from 'react-router-hash-link';
 import { BrowserRouter as Router } from "react-router-dom";
 import SideDrawer from './components/Drawer';
-import { Helmet } from 'react-helmet'
+// import { Helmet } from 'react-helmet'
 
 function App() {
   const classes = useStyles();
