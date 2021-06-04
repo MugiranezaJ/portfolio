@@ -5,7 +5,7 @@ import java from '../assets/java.png'
 import python from '../assets/python.png'
 import react from '../assets/logo192.png'
 import android from '../assets/android.png'
-import php from '../assets/php.png'
+// import php from '../assets/php.png'
 import solidworks from '../assets/solidworks.png'
 import unity from '../assets/unity.png'
 import photoshop from '../assets/photoshop.png'
@@ -60,12 +60,12 @@ export function About(){
                             </div>
                             <Typography>Android</Typography>
                         </div>
-                        <div className={classes.skill}>
+                        {/* <div className={classes.skill}>
                             <div >
                                 <img src={php} alt='Php' className={classes.skillLogo}/>
                             </div>
                             <Typography>Php</Typography>
-                        </div>
+                        </div> */}
                         <div className={classes.skill}>
                             <div >
                                 <img src={solidworks} alt='Solidworks' className={classes.skillLogo}/>
