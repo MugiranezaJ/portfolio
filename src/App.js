@@ -1,8 +1,8 @@
 // import logo from './logo.svg';
 import { AppBar, Box, Button, IconButton, Toolbar, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import '@fontsource/roboto';
-import './App.css'; 
+// import '@fontsource/roboto';
+// import './App.css'; 
 import logo from './assets/IMG_6521.JPG';
 // import {About} from './components/About'
 // import { Experience } from './components/Experience'
