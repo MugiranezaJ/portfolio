@@ -1,18 +1,18 @@
 // import logo from './logo.svg';
 import { AppBar, Box, Button, IconButton, Toolbar, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import '@fontsource/roboto';
-import './App.css'; 
+// import '@fontsource/roboto';
+// import './App.css'; 
 import logo from './assets/IMG_6521.JPG';
-import {About} from './components/About'
-import { Experience } from './components/Experience'
+// import {About} from './components/About'
+// import { Experience } from './components/Experience'
 import { Facebook, GitHub, HomeOutlined, LinkedIn, MailOutline, PhoneOutlined, Twitter } from '@material-ui/icons';
-import { Services } from './components/Services';
-import { Footer } from './components/footer';
+// import { Services } from './components/Services';
+// import { Footer } from './components/footer';
 import { HashLink as Link } from 'react-router-hash-link';
 import { BrowserRouter as Router } from "react-router-dom";
-import SideDrawer from './components/Drawer';
-import { Helmet } from 'react-helmet'
+// import SideDrawer from './components/Drawer';
+// import { Helmet } from 'react-helmet'
 
 function App() {
   const classes = useStyles();
@@ -21,7 +21,7 @@ function App() {
       {/* <Helmet>
         <title>MugiranezaJ</title>
       </Helmet> */}
-      <AppBar position='sticky' className={classes.appBar}>
+      {/* <AppBar position='sticky' className={classes.appBar}>
             <Toolbar style={{display:'flex', justifyContent:'space-between'}}>
               
               <Typography className={classes.siteName}>
@@ -33,7 +33,7 @@ function App() {
                 </Router>
               </IconButton>
             </Toolbar>
-          </AppBar>
+      </AppBar> */}
           <div className={classes.navigation}>
             <div className={classes.siteName} >MugiranezaJ</div>
             <div className={classes.buttonContainer}>
@@ -69,20 +69,20 @@ function App() {
               <Typography paragraph style={{display:'flex', }}>
                 <HomeOutlined color={'primary'} style={{marginRight:'15px'}}/> KK712 st Kigarama, Kigali, Rwanda
               </Typography>
-              <div>
+              {/* <div>
                 <IconButton href={'https://www.facebook.com/MugiranezaJofficial'}><Facebook/></IconButton>
                 <IconButton href={'https://twitter.com/MugiranezaJ_'}><Twitter/></IconButton>
                 <IconButton href={'https://www.linkedin.com/in/mugiraneza-jackson-9a7a181b8/'}><LinkedIn/></IconButton>
                 <IconButton href={'https://github.com/MugiranezaJ'}><GitHub/></IconButton>
-              </div>
+              </div> */}
             </div>
           </Box>
         </div>
       </div>
-      <About/>
+      {/* <About/>
       <Experience/>
       <Services/>
-      <Footer/>
+      <Footer/> */}
     </div>
   );
 }
@@ -91,12 +91,12 @@ const useStyles = makeStyles({
     background: 'whitesmoke',
     height:'900px',
     alignItems: 'flex-start',
-    '@media(max-width: 900px) and (min-width:720px)':{
-      height:'1070px',
-    },
-    '@media screen and (max-width: 720px) and (min-width:601px)':{
-      height:'1000px',
-    },
+    // '@media(max-width: 900px) and (min-width:720px)':{
+    //   height:'1070px',
+    // },
+    // '@media screen and (max-width: 720px) and (min-width:601px)':{
+    //   height:'1000px',
+    // },
     
   },
   homeInner:{
@@ -111,12 +111,12 @@ const useStyles = makeStyles({
     flexDirection:'column', 
     alignItems:'center', 
     justifyContent:'space-between',
-    '@media(max-width: 900px)':{
-      height:'740px',
-    },
-    '@media screen and (max-width: 800px) and (min-width:720px)':{
-      height:'1060px',
-    },
+    // '@media(max-width: 900px)':{
+    //   height:'740px',
+    // },
+    // '@media screen and (max-width: 800px) and (min-width:720px)':{
+    //   height:'1060px',
+    // },
   },
   navigation:{
     background: '#071e26',
@@ -131,12 +131,12 @@ const useStyles = makeStyles({
     justifyContent:'space-between',
     boxSizing:'border-box',
     zIndex:'100',
-    '@media(max-width:900px)':{
-      display:'none',
-    },
-    '@media(max-width: 720px)':{
-      width:'95%',
-    },
+    // '@media(max-width:900px)':{
+    //   display:'none',
+    // },
+    // '@media(max-width: 720px)':{
+    //   width:'95%',
+    // },
   },
   siteName:{
     display:'flex',
@@ -147,9 +147,9 @@ const useStyles = makeStyles({
   buttonContainer:{
     color:'#fff', 
     display:'flex',
-    '@media(max-width: 720px)':{
-      display:'none',
-    }
+    // '@media(max-width: 720px)':{
+    //   display:'none',
+    // }
   },
   navButton:{
     margin:'0 12px 0 12px',
@@ -170,41 +170,41 @@ const useStyles = makeStyles({
     color: 'black',
     padding:'30px',
     boxSizing:'border-box',
-    '@media(max-width: 900px)':{
-      width:'700px',
-      bottom:'inherit',
-      flexDirection:'column',
-      alignItems:'center',
-      height:'auto',
-      overflow:'auto',
-    },
-    '@media(max-width: 720px)':{
-      width:'95%',
-    },
-    '@media(max-width: 500px)':{
-      width:'90%',
-    },
+    // '@media(max-width: 900px)':{
+    //   width:'700px',
+    //   bottom:'inherit',
+    //   flexDirection:'column',
+    //   alignItems:'center',
+    //   height:'auto',
+    //   overflow:'auto',
+    // },
+    // '@media(max-width: 720px)':{
+    //   width:'95%',
+    // },
+    // '@media(max-width: 500px)':{
+    //   width:'90%',
+    // },
     
   },
   cardLeft:{
     width:'60%',
     fontWeight:'bold',
     borderRadius:'10px',
-    '@media(max-width: 900px)':{
-      width:'unset',
-    }
+    // '@media(max-width: 900px)':{
+    //   width:'unset',
+    // }
   },
   name:{
     fontWeight:'bold',
     fontSize:'36px',
-    '@media(max-width: 720px)':{
-      fontSize:'25px',
-      fontWeight:'bold'
-    },
-    '@media(max-width: 500px)':{
-      fontSize:'20px',
-      fontWeight:'bold'
-    }
+    // '@media(max-width: 720px)':{
+    //   fontSize:'25px',
+    //   fontWeight:'bold'
+    // },
+    // '@media(max-width: 500px)':{
+    //   fontSize:'20px',
+    //   fontWeight:'bold'
+    // }
   },
   cardRight:{
     display:'flex',
@@ -214,9 +214,9 @@ const useStyles = makeStyles({
     padding:'5px 25px',
     textAlign:'left',
     boxSizing:'border-box',
-    '@media(max-width: 900px)':{
-      width:'unset',
-    }
+    // '@media(max-width: 900px)':{
+    //   width:'unset',
+    // }
   },
   MyImage:{
     width:'100%',
@@ -228,9 +228,9 @@ const useStyles = makeStyles({
     display:'none',
     position:'sticky',
     backgroundColor:'#071e26',
-    '@media(max-width:900px)':{
-      display:'block',
-    }
+    // '@media(max-width:900px)':{
+    //   display:'block',
+    // }
   },
     linkText:{
       textDecoration:'none',
