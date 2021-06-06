@@ -4,14 +4,14 @@ import { makeStyles } from '@material-ui/core/styles';
 import '@fontsource/roboto';
 import './App.css'; 
 import logo from './assets/IMG_6521.JPG';
-import {About} from './components/About'
-import { Experience } from './components/Experience'
+// import {About} from './components/About'
+// import { Experience } from './components/Experience'
 import { Facebook, GitHub, HomeOutlined, LinkedIn, MailOutline, PhoneOutlined, Twitter } from '@material-ui/icons';
-import { Services } from './components/Services';
-import { Footer } from './components/footer';
+// import { Services } from './components/Services';
+// import { Footer } from './components/footer';
 import { HashLink as Link } from 'react-router-hash-link';
 import { BrowserRouter as Router } from "react-router-dom";
-import SideDrawer from './components/Drawer';
+// import SideDrawer from './components/Drawer';
 // import { Helmet } from 'react-helmet'
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
       {/* <Helmet>
         <title>MugiranezaJ</title>
       </Helmet> */}
-      <AppBar position='sticky' className={classes.appBar}>
+      {/* <AppBar position='sticky' className={classes.appBar}>
             <Toolbar style={{display:'flex', justifyContent:'space-between'}}>
               
               <Typography className={classes.siteName}>
@@ -33,7 +33,7 @@ function App() {
                 </Router>
               </IconButton>
             </Toolbar>
-          </AppBar>
+      </AppBar> */}
           <div className={classes.navigation}>
             <div className={classes.siteName} >MugiranezaJ</div>
             <div className={classes.buttonContainer}>
@@ -79,10 +79,10 @@ function App() {
           </Box>
         </div>
       </div>
-      <About/>
+      {/* <About/>
       <Experience/>
       <Services/>
-      <Footer/>
+      <Footer/> */}
     </div>
   );
 }
